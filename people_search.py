@@ -44,4 +44,4 @@ if __name__ == "__main__":
     people = read_people_from_file("people.txt")
 
     for p in people:
-        p.change_name("frank")
+        print(p)
