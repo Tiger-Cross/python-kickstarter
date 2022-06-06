@@ -43,12 +43,5 @@ if __name__ == "__main__":
     
     people = read_people_from_file("people.txt")
 
-    # first_name = get_attribute("first name")
-    # last_name = get_attribute("last name")
-    # phone_number = get_attribute("phone number")
-    # email = get_attribute("email")
-
-    # person = Person(first_name, last_name, phone_number, email)
-
-    # person.say_name()
-    # say_name(person)
+    for p in people:
+        p.change_name("frank")
