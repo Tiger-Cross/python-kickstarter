@@ -14,5 +14,9 @@ class Person:
         self.fname = newName
         print(f"{oldName} changed their name to {newName}")
 
+    def matches(self, query: str) -> bool:
+        return self.fname.startswith(query) or self.lname.startswith(query) or self.pnum.startswith(query) or self.email.startswith(query)
+
+
     def say_name(self):
         print(f"My full name is {self.fname} {self.lname}")    
